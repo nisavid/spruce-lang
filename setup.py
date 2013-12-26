@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 __copyright__ = "Copyright (C) 2013 Ivan D Vasin and Cogo Labs"
-__credits__ = ["Tyler Dumont", "Ivan D Vasin"]
+__credits__ = ["Ivan D Vasin", "Tyler Dumont"]
 __maintainer__ = "Ivan D Vasin"
 __email__ = "nisavid@gmail.com"
 __docformat__ = "restructuredtext"
@@ -13,21 +13,27 @@ from setuptools import find_packages as _find_packages, setup as _setup
 
 NAME_NOPREFIX = 'lang'
 
-NAME = 'nisavid-' + NAME_NOPREFIX
+NAME = 'Spruce-' + NAME_NOPREFIX
 
-VERSION = '0'
+VERSION = '0.1.0'
 
 SITE_URI = ''
 
-DESCRIPTION = 'Python language extensions.'
+DESCRIPTION = 'Python language extensions'
 
-LONG_DESCRIPTION = DESCRIPTION + '''
+README_FILE = 'README.rst'
+with open(README_FILE, 'r') as _file:
+    README = _file.read()
 
-This is a transitional project.  The objects in it should eventually be
-migrated to appropriate topical projects.
-'''
+CHANGES_FILE = 'CHANGES.rst'
+with open(CHANGES_FILE, 'r') as _file:
+    CHANGES = _file.read()
 
-LICENSE = 'LGPLv3'
+LICENSE_FILE = 'LICENSE'
+with open(LICENSE_FILE, 'r') as _file:
+    LICENSE = _file.read()
+
+LONG_DESCRIPTION = '\n\n'.join((README, CHANGES))
 
 TROVE_CLASSIFIERS = \
     ('Development Status :: 5 - Production/Stable',
@@ -55,7 +61,7 @@ DEPS_SEARCH_URIS = ()
 
 # packages --------------------------------------------------------------------
 
-PARENT_NAMESPACE_PKG = 'nisavid'
+PARENT_NAMESPACE_PKG = 'spruce'
 
 ROOT_PKG = '.'.join((PARENT_NAMESPACE_PKG, NAME_NOPREFIX))
 

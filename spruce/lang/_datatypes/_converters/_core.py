@@ -29,8 +29,8 @@ def converter(totype, convertible_type_description=None,
     are used by the converter's exceptions to describe the allowed input
     types and values.  Their default values are the corresponding properties
     of the given *totype* if it is an
-    :class:`~nisavid.lang._datatypes._annotated.AnnotatedType` subclass.  If a
-    *convertible_type_description* is defined but a
+    :class:`~spruce.lang._datatypes._annotated.AnnotatedType` subclass.  If
+    a *convertible_type_description* is defined but a
     *convertible_value_description* is not, then the latter takes the form
     of the former with a preceding indefinite article.
 

@@ -27,7 +27,7 @@ class enum(object):
     For example, an :class:`!enum` over the set of card suits can be
     defined as follows::
 
-        from nisavid.lang import converter as _converter, enum as _enum
+        from spruce.lang import converter as _converter, enum as _enum
 
         @_converter('stripped lowercase string')
         def str_strip_lower(string):
@@ -192,8 +192,8 @@ def namedflagset_classes(classname, frozenclassname=None, baseclassname=None,
     __doc__suffix = \
         """
 
-        .. seealso:: :func:`nisavid.lang.namedflagset_classes
-                            <nisavid.lang._datatypes.namedflagset_classes>`
+        .. seealso:: :func:`spruce.lang.namedflagset_classes
+                            <spruce.lang._datatypes.namedflagset_classes>`
 
         :param flags:
             Flags.  A union (using ``|``) of zero or more of the flags

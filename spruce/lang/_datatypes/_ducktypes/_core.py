@@ -50,19 +50,19 @@ def ducktypeclass_fromconverter(classname, converter, bases=(),
             else:
                 ducktypeclass_description = 'a duck type'
             ducktypeclass_description += ' from converter {!r}'\
-                                             .format(converter)
+                                          .format(converter)
             if bases:
                 ducktypeclass_description += ' with bases {}'.format(bases)
 
             raise ValueError('cannot determine a subclass check function for'
-                             ' constructing {}'
-                                 .format(ducktypeclass_description))
+                              ' constructing {}'
+                              .format(ducktypeclass_description))
 
     if not classname:
         classname = converter.annotated_totype.__name__ + '_DuckType'
 
     ducktypeclass_bases = [converter.annotated_totype]
-    ducktypeclass_bases.extend(list(bases or [AnnotatedDuckType]))
+    ducktypeclass_bases.extend(list(bases or (AnnotatedDuckType,)))
     ducktypeclass_bases = tuple(ducktypeclass_bases)
 
     ducktypeclass_attrs = {'_value_isinstance': _value_isinstance}

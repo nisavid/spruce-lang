@@ -227,7 +227,7 @@ def namedflagset_classes(classname, frozenclassname=None, baseclassname=None,
             flags = int(flags)
         except TypeError:
             raise TypeError('invalid flags type {!r}; expecting one that is'
-                            ' accepted by {!r}'
+                             ' accepted by {!r}'
                              .format(flags.__class__, int))
         except ValueError:
             raise ValueError('invalid flags {!r}; expecting an integer'

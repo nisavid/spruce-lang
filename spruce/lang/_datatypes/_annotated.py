@@ -25,8 +25,7 @@ class AnnotatedType(object):
             else:
                 article = 'a'
 
-            return '{} {!r}'.format(article,
-                                    cls.convertible_type_description())
+            return '{} {}'.format(article, cls.convertible_type_description())
         else:
             return None
 

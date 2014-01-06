@@ -132,10 +132,10 @@ class Converter(object):
                 return convertible_value_description_
 
             annotated_totype_attrs = {'displayname': displayname}
-            if convertible_type_description is not None:
+            if convertible_type_description_ is not None:
                 annotated_totype_attrs['convertible_type_description'] = \
                     convertible_type_description
-            if convertible_value_description is not None:
+            if convertible_value_description_ is not None:
                 annotated_totype_attrs['convertible_value_description'] = \
                     convertible_value_description
 

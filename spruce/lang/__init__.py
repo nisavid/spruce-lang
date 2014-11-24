@@ -11,5 +11,4 @@ __maintainer__ = "Ivan D Vasin"
 __email__ = "nisavid@gmail.com"
 __docformat__ = "restructuredtext"
 
-from ._datatypes import *
 from ._misc import *

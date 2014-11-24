@@ -12,5 +12,4 @@ __email__ = "nisavid@gmail.com"
 __docformat__ = "restructuredtext"
 
 from ._datatypes import *
-from ._exc import *
 from ._misc import *

@@ -27,7 +27,7 @@ def safe_name(name, default_str='_'):
     safe_name_ = _re.sub(r'[^\d\w]', default_str, safe_name_)
     if not safe_name_:
         raise ValueError('cannot convert {!r} to a safe object name'
-                             .format(name))
+                          .format(name))
     return safe_name_
 
 
@@ -44,5 +44,5 @@ def safe_classname(name, default_str='_'):
                         if word)
     if not classname:
         raise ValueError('cannot convert {!r} to a safe class name'
-                             .format(name))
+                          .format(name))
     return classname

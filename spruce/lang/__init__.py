@@ -5,6 +5,7 @@ eventually get migrated to its own project.
 
 """
 
+__version__ = "0.1.3"
 __copyright__ = "Copyright (C) 2014 Ivan D Vasin"
 __credits__ = ["Ivan D Vasin"]
 __maintainer__ = "Ivan D Vasin"

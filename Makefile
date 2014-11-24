@@ -173,7 +173,7 @@ ifeq "$(VCS_HAS_LOCAL_CHANGES)" "0"
                  | sed 's/.*Date: \([^()]\+\).*/\1/'; \
                 ;; \
         esac
-	VERSION_RELEASE := $(shell date -u +%Y%m%d%H%M%S 
+	VERSION_RELEASE := $(shell date -u +%Y%m%d%H%M%S
                                     -d "$$($(last_commit_date_cmd))")
 else
 	ifneq "$(VCS_HAS_UNCOMMITTED_CHANGES)" "0"
